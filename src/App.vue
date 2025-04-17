@@ -4,7 +4,7 @@ import HeaderComponent from "./components/header/HeaderComponent.vue";
 
 <template>
   <div
-    class="dark group/design-root bg-dark-navy relative flex size-full min-h-screen flex-col overflow-x-hidden"
+    class="dark group/design-root bg-beige text-dark-gray relative flex size-full min-h-screen flex-col overflow-x-hidden"
   >
     <div class="layout-container flex h-full grow flex-col">
       <HeaderComponent />

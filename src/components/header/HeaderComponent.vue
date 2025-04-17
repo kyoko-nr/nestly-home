@@ -13,7 +13,7 @@ const navItems = [
 
 <template>
   <header
-    class="border-light-gray flex h-[64px] items-center border-b px-[40px]"
+    class="border-dark-gray flex h-[64px] items-center border-b px-[40px]"
   >
     <a
       href="#"
@@ -24,9 +24,7 @@ const navItems = [
         :src="imageIcon"
         alt=""
       />
-      <h2
-        class="text-lg leading-tight font-bold tracking-[-0.015em] text-white"
-      >
+      <h2 class="text-lg leading-tight font-bold tracking-[-0.015em]">
         NESTLY
       </h2>
     </a>
@@ -39,8 +37,8 @@ const navItems = [
         >
           <a
             :href="item.href"
-            class="flex h-full items-center px-[12px] text-sm leading-normal font-medium text-white"
-            ><span>{{ item.label }}</span></a
+            class="flex h-full items-center px-[12px] leading-normal"
+            ><span class="text-base tracking-wider">{{ item.label }}</span></a
           >
         </li>
       </ul>
