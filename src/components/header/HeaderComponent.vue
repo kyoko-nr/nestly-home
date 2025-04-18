@@ -13,7 +13,7 @@ const navItems = [
 
 <template>
   <header
-    class="border-dark-gray flex h-[64px] items-center border-b px-[40px]"
+    class="border-dark-gray bg-beige/50 fixed top-0 z-1 flex h-[64px] w-full items-center border-b px-[40px] backdrop-blur-sm"
   >
     <a
       href="#"
@@ -25,11 +25,11 @@ const navItems = [
         alt=""
       />
       <h2 class="text-lg leading-tight font-bold tracking-[-0.015em]">
-        NESTLY
+        NESTLY Home
       </h2>
     </a>
     <div class="flex h-full flex-1 justify-end gap-8">
-      <ul class="flex items-center gap-[16px]">
+      <ul class="flex items-center">
         <li
           v-for="item in navItems"
           :key="item.href"
@@ -37,7 +37,7 @@ const navItems = [
         >
           <a
             :href="item.href"
-            class="flex h-full items-center px-[12px] leading-normal"
+            class="flex h-full items-center px-[20px] leading-normal"
             ><span class="text-base tracking-wider">{{ item.label }}</span></a
           >
         </li>

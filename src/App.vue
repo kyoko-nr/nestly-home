@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HeaderComponent from "./components/header/HeaderComponent.vue";
+import HeroComponent from "./components/hero/HeroComponent.vue";
 </script>
 
 <template>
@@ -8,6 +9,9 @@ import HeaderComponent from "./components/header/HeaderComponent.vue";
   >
     <div class="layout-container flex h-full grow flex-col">
       <HeaderComponent />
+      <main>
+        <HeroComponent />
+      </main>
     </div>
   </div>
 </template>
