@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import FeaturesComponent from "./components/features/FeaturesComponent.vue";
 import HeaderComponent from "./components/header/HeaderComponent.vue";
 import HeroComponent from "./components/hero/HeroComponent.vue";
 import VisionComponent from "./components/vision/VisionComponent.vue";
@@ -13,6 +14,7 @@ import VisionComponent from "./components/vision/VisionComponent.vue";
       <main>
         <HeroComponent />
         <VisionComponent />
+        <FeaturesComponent />
       </main>
     </div>
   </div>
