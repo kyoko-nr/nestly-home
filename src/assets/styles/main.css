@@ -10,3 +10,8 @@
 
   --font-accent: "DM Serif Text", serif;
 }
+
+body {
+  background: #f2efe9;
+  font-family: "Noto Sans", sans-serif;
+}

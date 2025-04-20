@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ExperienceComponent from "./components/experience/ExperienceComponent.vue";
 import FeaturesComponent from "./components/features/FeaturesComponent.vue";
 import HeaderComponent from "./components/header/HeaderComponent.vue";
 import HeroComponent from "./components/hero/HeroComponent.vue";
@@ -7,7 +8,7 @@ import VisionComponent from "./components/vision/VisionComponent.vue";
 
 <template>
   <div
-    class="dark group/design-root bg-beige text-dark-gray relative flex size-full min-h-screen flex-col overflow-x-hidden"
+    class="dark group/design-root text-dark-gray relative flex size-full min-h-screen flex-col overflow-x-hidden"
   >
     <div class="layout-container flex h-full grow flex-col">
       <HeaderComponent />
@@ -15,6 +16,7 @@ import VisionComponent from "./components/vision/VisionComponent.vue";
         <HeroComponent />
         <VisionComponent />
         <FeaturesComponent />
+        <ExperienceComponent />
       </main>
     </div>
   </div>
