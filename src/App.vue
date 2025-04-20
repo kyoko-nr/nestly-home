@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeaderComponent from "./components/header/HeaderComponent.vue";
 import HeroComponent from "./components/hero/HeroComponent.vue";
+import VisionComponent from "./components/vision/VisionComponent.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import HeroComponent from "./components/hero/HeroComponent.vue";
       <HeaderComponent />
       <main>
         <HeroComponent />
+        <VisionComponent />
       </main>
     </div>
   </div>
