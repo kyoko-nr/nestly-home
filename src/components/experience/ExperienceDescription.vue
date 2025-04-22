@@ -4,11 +4,11 @@ const { title } = defineProps<{ title: string }>();
 
 <template>
   <div class="relative">
-    <div class="absolute top-1/2 -translate-y-1/2 text-white text-shadow-lg/10">
-      <h2 class="font-accent mb-10 text-center text-4xl tracking-wider">
+    <div class="absolute top-1/2 -translate-y-1/2 text-white">
+      <h2 class="font-accent mb-10 text-center text-3xl tracking-wider">
         {{ title }}
       </h2>
-      <p class="text-center text-xl leading-[2]">
+      <p class="text-center text-lg leading-[2]">
         <slot></slot>
       </p>
     </div>
