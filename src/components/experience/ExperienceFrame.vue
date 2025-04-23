@@ -19,9 +19,11 @@ const bgColor = {
 
 <template>
   <div
-    class="h-full w-full rounded-2xl"
+    class="h-screen w-full rounded-t-2xl"
     :class="bgColor[color]"
   >
-    <slot></slot>
+    <div class="relative grid h-full grid-cols-2 gap-8 px-[120px]">
+      <slot></slot>
+    </div>
   </div>
 </template>
