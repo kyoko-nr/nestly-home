@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CalloutComponent from "./components/callout/CalloutComponent.vue";
 import ExperienceComponent from "./components/experience/ExperienceComponent.vue";
 import FaqComponent from "./components/faq/FaqComponent.vue";
 import FeaturesComponent from "./components/features/FeaturesComponent.vue";
@@ -19,6 +20,7 @@ import VisionComponent from "./components/vision/VisionComponent.vue";
         <FeaturesComponent />
         <ExperienceComponent />
         <FaqComponent />
+        <CalloutComponent />
       </main>
     </div>
   </div>
