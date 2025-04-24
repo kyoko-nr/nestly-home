@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="flex flex-col gap-[60px] p-[120px] pt-[240px]">
+  <section
+    id="vision"
+    class="flex flex-col gap-[60px] p-[120px] pt-[240px]"
+  >
     <h2 class="font-accent text-center text-6xl">Live simply, live smart.</h2>
     <p class="text-center text-2xl leading-[1.8]">
       Nestly brings thoughtful technology into your everyday life<br />quietly

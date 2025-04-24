@@ -5,8 +5,7 @@ const navItems = [
   { label: "Vision", href: "#vision" },
   { label: "Features", href: "#features" },
   { label: "Experience", href: "#experience" },
-  { label: "Devices", href: "#devices" },
-  { label: "About", href: "#about" },
+  { label: "FAQs", href: "#faqs" },
   { label: "Get Started", href: "#get-started" },
 ];
 </script>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ExperienceComponent from "./components/experience/ExperienceComponent.vue";
+import FaqComponent from "./components/faq/FaqComponent.vue";
 import FeaturesComponent from "./components/features/FeaturesComponent.vue";
 import HeaderComponent from "./components/header/HeaderComponent.vue";
 import HeroComponent from "./components/hero/HeroComponent.vue";
@@ -17,6 +18,7 @@ import VisionComponent from "./components/vision/VisionComponent.vue";
         <VisionComponent />
         <FeaturesComponent />
         <ExperienceComponent />
+        <FaqComponent />
       </main>
     </div>
   </div>

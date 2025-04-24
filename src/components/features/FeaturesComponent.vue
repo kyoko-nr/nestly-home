@@ -30,7 +30,10 @@ const features = [
 </script>
 
 <template>
-  <section class="grid grid-cols-2 gap-12 p-[120px]">
+  <section
+    id="features"
+    class="grid grid-cols-2 gap-12 p-[120px]"
+  >
     <div
       v-for="(feature, index) in features"
       :key="index"

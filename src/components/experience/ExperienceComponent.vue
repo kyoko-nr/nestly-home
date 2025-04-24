@@ -6,7 +6,10 @@ import NightExperience from "./NightExperience.vue";
 </script>
 
 <template>
-  <section class="pt-[120px]">
+  <section
+    id="experience"
+    class="pt-[120px]"
+  >
     <MorningExperience />
     <LeaveExperience />
     <HomeExperience />
