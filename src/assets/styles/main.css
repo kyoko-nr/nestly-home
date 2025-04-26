@@ -18,6 +18,10 @@
   --font-accent: "DM Serif Text", serif;
 }
 
+:root {
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+}
+
 body {
   background: #f2efe9;
   font-family: "Noto Sans", sans-serif;
