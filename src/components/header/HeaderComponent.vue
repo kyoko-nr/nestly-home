@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import imageIcon from "@/assets/images/icon_nestly.svg";
+import { onMounted, useTemplateRef } from "vue";
+import gsap from "gsap";
 
 const navItems = [
   { label: "Vision", href: "#vision" },
@@ -8,11 +10,32 @@ const navItems = [
   { label: "FAQs", href: "#faqs" },
   { label: "Get Started", href: "#get-started" },
 ];
+
+const header = useTemplateRef("header");
+
+onMounted(() => {
+  setTimeout(() => {
+    gsap.fromTo(
+      header.value,
+      {
+        opacity: 0,
+        y: -10,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "expo.out",
+      },
+    );
+  }, 2200);
+});
 </script>
 
 <template>
   <header
-    class="border-dark-gray bg-beige/50 fixed top-0 z-1 flex h-[64px] w-full items-center border-b px-[40px] backdrop-blur-sm"
+    ref="header"
+    class="border-dark-gray bg-beige/50 fixed top-0 z-1 flex h-[64px] w-full items-center border-b px-[40px] opacity-0 backdrop-blur-sm"
   >
     <a
       href="#"
