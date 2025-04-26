@@ -21,4 +21,5 @@
 body {
   background: #f2efe9;
   font-family: "Noto Sans", sans-serif;
+  color: var(--color-dark-gray);
 }
