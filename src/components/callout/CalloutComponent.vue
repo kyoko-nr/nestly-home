@@ -12,6 +12,9 @@ import CalloutImage from "@/assets/images/callout.jpg";
         :src="CalloutImage"
         alt=""
         class="h-full w-full object-cover"
+        width="1535"
+        height="863"
+        loading="lazy"
       />
     </div>
     <div class="flex flex-col items-center justify-center">
