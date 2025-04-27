@@ -2,13 +2,14 @@
 import { onMounted } from "vue";
 import gsap from "gsap";
 
-const { texts, wrapperClassName } = defineProps<{
+const { texts, wrapperClassName, textClassName } = defineProps<{
   texts: string[];
   wrapperClassName: string;
+  textClassName: string;
 }>();
 
 onMounted(() => {
-  const sentences = document.querySelectorAll(".js-sentence");
+  const sentences = document.querySelectorAll(`.${textClassName}`);
   gsap.fromTo(
     sentences,
     {
@@ -35,6 +36,10 @@ onMounted(() => {
     :key="index"
     class="overflow-hidden"
   >
-    <span class="js-sentence inline-block">{{ text }}</span>
+    <span
+      class="inline-block"
+      :class="textClassName"
+      >{{ text }}</span
+    >
   </span>
 </template>
