@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import ExperienceFrame from "./ExperienceFrame.vue";
-import ExperienceDescription from "./ExperienceDescription.vue";
+import ExperienceFrame from "./parts/ExperienceFrame.vue";
+import ExperienceDescription from "./parts/ExperienceDescription.vue";
 import Home01 from "@/assets/images/experience/home_01.jpg";
 import Home02 from "@/assets/images/experience/home_02.jpg";
+import AnimationImage from "./parts/AnimationImage.vue";
 </script>
 
 <template>
@@ -14,26 +15,18 @@ import Home02 from "@/assets/images/experience/home_02.jpg";
       </p>
     </ExperienceDescription>
     <div class="relative">
-      <div
-        class="absolute top-1/2 w-[80%] -translate-y-[calc(100%-10px)] overflow-hidden"
-      >
-        <img
+      <div class="absolute top-1/2 w-[80%] -translate-y-[calc(100%-10px)]">
+        <AnimationImage
           :src="Home01"
-          alt=""
-          width="320"
-          height="214"
-          class="h-auto w-full scale-120"
+          :width="320"
+          :height="214"
         />
       </div>
-      <div
-        class="absolute top-1/2 right-0 w-[80%] -translate-y-[10px] overflow-hidden"
-      >
-        <img
+      <div class="absolute top-1/2 right-0 w-[80%] -translate-y-[10px]">
+        <AnimationImage
           :src="Home02"
-          alt=""
-          width="320"
-          height="214"
-          class="h-auto w-full scale-120"
+          :width="320"
+          :height="214"
         />
       </div>
     </div>

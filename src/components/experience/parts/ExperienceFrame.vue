@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import gsap from "gsap";
+import { onMounted } from "vue";
 type Colors =
   | "orangeBeige"
   | "yellowBeige"
@@ -15,6 +17,8 @@ const bgColor = {
   mochaBrown: "bg-mocha-brown",
   yellowBrown: "bg-yellow-brown",
 } as Record<Colors, string>;
+
+onMounted(() => {});
 </script>
 
 <template>

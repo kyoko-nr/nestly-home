@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import ExperienceFrame from "./ExperienceFrame.vue";
-import ExperienceDescription from "./ExperienceDescription.vue";
+import ExperienceFrame from "./parts/ExperienceFrame.vue";
+import ExperienceDescription from "./parts/ExperienceDescription.vue";
 import Night01 from "@/assets/images/experience/night_01.jpg";
+import AnimationImage from "./parts/AnimationImage.vue";
 </script>
 
 <template>
   <ExperienceFrame color="mochaBrown">
     <div class="relative">
-      <div class="absolute top-1/2 w-[100%] -translate-y-1/2 overflow-hidden">
-        <img
+      <div class="absolute top-1/2 w-[100%] -translate-y-1/2">
+        <AnimationImage
           :src="Night01"
-          alt=""
-          width="500"
-          height="282"
-          class="h-auto w-full scale-120"
+          :width="500"
+          :height="282"
         />
       </div>
     </div>
