@@ -28,7 +28,7 @@ onMounted(() => {
         ease: "expo.out",
       },
     );
-  }, 2200);
+  }, 2400);
 });
 </script>
 
