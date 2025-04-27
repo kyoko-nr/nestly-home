@@ -32,7 +32,7 @@ const productFAQs = [
 <template>
   <section
     id="faqs"
-    class="p-[120px]"
+    class="z-index-1 bg-beige relative p-[120px]"
   >
     <h2 class="font-accent mb-20 text-center text-4xl tracking-wider">
       Got questions? Nestly’s got answers.

@@ -22,7 +22,7 @@ onMounted(() => {
       stagger: 0.1,
       scrollTrigger: {
         trigger: `.${wrapperClassName}`,
-        start: "top 70%",
+        start: "top 80%",
         toggleActions: "play none none none",
       },
     },
@@ -34,7 +34,7 @@ onMounted(() => {
   <span
     v-for="(text, index) in texts"
     :key="index"
-    class="overflow-hidden"
+    class="inline-block overflow-hidden"
   >
     <span
       class="inline-block"

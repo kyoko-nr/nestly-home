@@ -8,7 +8,7 @@ import NightExperience from "./NightExperience.vue";
 <template>
   <section
     id="experience"
-    class="pt-[120px]"
+    class="relative pt-[120px]"
   >
     <MorningExperience />
     <LeaveExperience />
