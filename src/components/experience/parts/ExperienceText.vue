@@ -8,7 +8,7 @@ const { texts, className } = defineProps<{
 
 <template>
   <p
-    class="js-morning-ex-description grid grid-cols-1 gap-y-[10px] text-center text-lg leading-[1.5]"
+    class="js-morning-ex-description grid grid-cols-1 gap-y-[10px] text-center text-lg leading-[1.5] max-md:text-base"
     :class="`${className}-description`"
   >
     <AnimationText

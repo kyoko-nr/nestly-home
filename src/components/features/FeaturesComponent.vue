@@ -55,7 +55,7 @@ onMounted(() => {
 <template>
   <section
     id="features"
-    class="js-features-section grid grid-cols-2 gap-12 p-[120px]"
+    class="js-features-section grid grid-cols-2 gap-12 p-[120px] max-lg:px-[24px] max-lg:py-[60px] max-md:grid-cols-1"
   >
     <div
       v-for="(feature, index) in features"
@@ -66,10 +66,10 @@ onMounted(() => {
         :is="feature.icon"
         class="mb-10 h-10 w-10"
       />
-      <h3 class="font-accent mb-6 text-2xl">
+      <h3 class="font-accent mb-6 text-2xl max-md:text-xl">
         {{ feature.title }}
       </h3>
-      <p class="text-lg">
+      <p class="text-lg max-md:text-base">
         {{ feature.description }}
       </p>
     </div>

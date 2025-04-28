@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <h1
     ref="title"
-    class="text-shadow-dark-gray font-accent relative text-left text-8xl leading-[1.2] text-white text-shadow-lg/30"
+    class="text-shadow-dark-gray font-accent relative text-left text-8xl leading-[1.2] text-white text-shadow-lg/30 max-md:text-center max-md:text-5xl"
   >
     <span class="block overflow-hidden"
       ><span class="js-hero-title-text inline-block translate-y-[110%]"

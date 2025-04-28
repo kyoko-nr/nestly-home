@@ -74,7 +74,9 @@ onMounted(() => {
           :class="bgColor[color]"
         ></div>
         <div class="absolute top-0 left-0 h-full w-full">
-          <div class="relative grid h-full grid-cols-2 gap-8 px-[120px]">
+          <div
+            class="relative grid h-full grid-cols-2 gap-8 px-[120px] max-lg:px-[24px] max-lg:py-[60px] max-md:grid-cols-1 max-md:gap-4"
+          >
             <slot></slot>
           </div>
         </div>

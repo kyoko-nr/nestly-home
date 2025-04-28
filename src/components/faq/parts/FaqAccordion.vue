@@ -59,7 +59,7 @@ const toggleAccordion = (event: Event) => {
       class="flex cursor-pointer items-center justify-between px-2 py-6"
       @click="toggleAccordion"
     >
-      <h4 class="flex items-center gap-2 text-2xl">
+      <h4 class="flex items-center gap-2 text-xl">
         {{ question }}
       </h4>
       <span class="relative inline-block h-[20px] w-[20px]">
@@ -76,7 +76,7 @@ const toggleAccordion = (event: Event) => {
       class="overflow-hidden"
     >
       <div class="px-2 pb-6">
-        <p class="text-lg">{{ answer }}</p>
+        <p class="text-lg max-md:text-base">{{ answer }}</p>
       </div>
     </div>
   </details>

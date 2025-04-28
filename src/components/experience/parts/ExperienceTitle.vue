@@ -8,7 +8,7 @@ const { title, className } = defineProps<{
 
 <template>
   <h3
-    class="font-accent mb-10 text-center text-2xl tracking-wider"
+    class="font-accent mb-10 text-center text-2xl tracking-wider max-md:text-xl"
     :class="`${className}-title`"
   >
     <AnimationText

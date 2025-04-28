@@ -36,11 +36,11 @@ onMounted(() => {
 <template>
   <section
     id="vision"
-    class="relative grid grid-cols-[1fr_32%] p-[120px]"
+    class="relative grid grid-cols-[1fr_32%] p-[120px] max-lg:px-[24px] max-lg:py-[60px] max-md:grid-cols-1"
   >
     <div class="flex h-full flex-col items-center justify-center gap-[60px]">
       <h2
-        class="js-vision-title font-accent relative inline-block text-center text-4xl"
+        class="js-vision-title font-accent relative inline-block text-center text-4xl max-md:text-2xl"
       >
         <AnimationTitle
           :titles="['Live simply, live smart.']"
@@ -49,7 +49,7 @@ onMounted(() => {
         />
       </h2>
       <p
-        class="js-vision-description flex flex-col text-center text-xl leading-[2]"
+        class="js-vision-description flex flex-col text-center text-xl leading-[2] max-md:text-base"
       >
         <AnimationText
           :texts="texts"
@@ -59,18 +59,20 @@ onMounted(() => {
       </p>
     </div>
 
-    <div
-      ref="image"
-      class=""
-    >
-      <img
-        height="1548"
-        width="928"
-        alt=""
-        loading="lazy"
-        :src="MockImage"
-        class="h-full w-full object-cover"
-      />
+    <div class="max-md:flex max-md:justify-center">
+      <div
+        ref="image"
+        class="max-md:w-[50%]"
+      >
+        <img
+          height="1548"
+          width="928"
+          alt=""
+          loading="lazy"
+          :src="MockImage"
+          class="h-full w-full object-cover"
+        />
+      </div>
     </div>
   </section>
 </template>

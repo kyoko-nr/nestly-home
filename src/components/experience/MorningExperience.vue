@@ -32,14 +32,18 @@ const morningText = [
       </div>
     </div>
     <div class="relative">
-      <div class="absolute top-1/2 w-[80%] -translate-y-[calc(100%-10px)]">
+      <div
+        class="absolute top-1/2 w-[80%] -translate-y-[calc(100%-10px)] max-md:top-0 max-md:left-0 max-md:w-[48%] max-md:-translate-y-[10%]"
+      >
         <AnimationImage
           :src="Morning01"
           :width="320"
           :height="214"
         />
       </div>
-      <div class="absolute top-1/2 right-0 w-[80%] -translate-y-[10px]">
+      <div
+        class="absolute top-1/2 right-0 w-[80%] -translate-y-[10px] max-md:top-0 max-md:right-0 max-md:w-[48%] max-md:translate-y-[10%]"
+      >
         <AnimationImage
           :src="Morning02"
           :width="320"

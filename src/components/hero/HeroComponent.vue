@@ -54,12 +54,14 @@ onMounted(() => {
         class="h-full w-full scale-130 object-cover"
       />
     </div>
-    <div class="absolute top-1/2 -translate-y-1/2 pl-[120px]">
+    <div
+      class="absolute top-1/2 -translate-y-1/2 pl-[120px] max-md:left-1/2 max-md:w-full max-md:-translate-x-1/2 max-md:pl-0"
+    >
       <HeroTitle />
     </div>
     <div
       ref="scroll"
-      class="absolute bottom-0 left-1/2 -translate-y-[50px] -rotate-90 opacity-0"
+      class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-[50px] -rotate-90 opacity-0"
     >
       <div class="custom-scroll relative">
         <span>scroll</span>

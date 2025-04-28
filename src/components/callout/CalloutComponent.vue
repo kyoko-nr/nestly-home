@@ -12,7 +12,7 @@ const className = "js-callout-title";
 <template>
   <section
     id="get-started"
-    class="relative flex h-screen w-full justify-center p-[120px]"
+    class="relative flex h-screen w-full justify-center p-[120px] max-lg:px-[24px] max-lg:py-[60px]"
   >
     <div class="absolute top-0 left-0 -z-1 h-full w-full">
       <AnimationImage
@@ -25,14 +25,16 @@ const className = "js-callout-title";
       class="flex flex-col items-center justify-center"
       :class="`${className}-wrapper`"
     >
-      <h3 class="font-accent mb-[24px] text-4xl tracking-wider">
+      <h3 class="font-accent mb-[24px] text-4xl tracking-wider max-md:text-2xl">
         <AnimationTitle
           :titles="title1"
           :wrapper-class-name="`${className}-wrapper`"
           :text-class-name="`${className}-1`"
         />
       </h3>
-      <h3 class="font-accent mb-[60px] text-4xl tracking-wider">
+      <h3
+        class="font-accent mb-[60px] text-center text-2xl tracking-wider max-md:text-xl"
+      >
         <AnimationTitle
           :titles="title2"
           :wrapper-class-name="`${className}-wrapper`"
