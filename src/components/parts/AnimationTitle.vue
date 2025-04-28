@@ -44,7 +44,7 @@ onMounted(() => {
   <span
     v-for="(title, index) in titles"
     :key="index"
-    class="relative inline-block h-full w-full overflow-hidden px-4 pt-1"
+    class="relative inline-block h-full w-full overflow-hidden px-4 pt-1 tracking-wider"
   >
     <span
       class="inline-block"

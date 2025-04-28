@@ -28,14 +28,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="overflow-hidden">
+  <div class="h-full overflow-hidden">
     <img
       ref="image"
       :src="src"
       alt=""
       :width="width"
       :height="height"
-      class="h-auto w-full scale-115"
+      class="h-full w-full scale-115 object-cover"
     />
   </div>
 </template>

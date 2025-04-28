@@ -2,7 +2,7 @@
 import ExperienceFrame from "./parts/ExperienceFrame.vue";
 import Home01 from "@/assets/images/experience/home_01.jpg";
 import Home02 from "@/assets/images/experience/home_02.jpg";
-import AnimationImage from "./parts/AnimationImage.vue";
+import AnimationImage from "../parts/AnimationImage.vue";
 import ExperienceTitle from "./parts/ExperienceTitle.vue";
 import ExperienceText from "./parts/ExperienceText.vue";
 

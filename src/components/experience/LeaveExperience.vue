@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ExperienceFrame from "./parts/ExperienceFrame.vue";
 import Leave01 from "@/assets/images/experience/leave_01.jpg";
-import AnimationImage from "./parts/AnimationImage.vue";
+import AnimationImage from "../parts/AnimationImage.vue";
 import ExperienceTitle from "./parts/ExperienceTitle.vue";
 import ExperienceText from "./parts/ExperienceText.vue";
 
