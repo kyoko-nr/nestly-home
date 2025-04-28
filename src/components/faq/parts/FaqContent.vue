@@ -32,6 +32,7 @@ const productFAQs = [
 
 onMounted(() => {
   const accordions = document.querySelectorAll(".js-faq-accordion-item");
+  const lines = document.querySelectorAll(".custom-accordion-line");
   gsap.fromTo(
     accordions,
     {
@@ -42,6 +43,8 @@ onMounted(() => {
       y: 0,
       opacity: 1,
       stagger: 0.1,
+      duration: 1,
+      ease: "expo.out",
       scrollTrigger: {
         trigger: ".js-faq-accordion",
         start: "top 80%",
@@ -49,6 +52,18 @@ onMounted(() => {
       },
     },
   );
+  gsap.to(lines, {
+    width: "100%",
+    duration: 1,
+    ease: "expo.out",
+    delay: 0.2,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".js-faq-accordion",
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+  });
 });
 </script>
 
@@ -57,12 +72,25 @@ onMounted(() => {
     <div
       v-for="(faq, index) in productFAQs"
       :key="index"
-      class="js-faq-accordion-item border-b"
+      class="rerative js-faq-accordion-item custom-accordion"
     >
       <FaqAccordion
         :question="faq.question"
         :answer="faq.answer"
       />
+      <span class="custom-accordion-line"></span>
     </div>
   </div>
 </template>
+
+<style lang="css" scoped>
+.custom-accordion-line {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: var(--color-dark-gray);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+</style>
