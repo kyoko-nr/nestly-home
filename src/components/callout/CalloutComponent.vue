@@ -21,18 +21,21 @@ const className = "js-callout-title";
         :height="863"
       />
     </div>
-    <div class="flex flex-col items-center justify-center">
+    <div
+      class="flex flex-col items-center justify-center"
+      :class="`${className}-wrapper`"
+    >
       <h3 class="font-accent mb-[24px] text-4xl tracking-wider">
         <AnimationTitle
           :titles="title1"
-          :wrapper-class-name="`${className}-wrapper-1`"
+          :wrapper-class-name="`${className}-wrapper`"
           :text-class-name="`${className}-1`"
         />
       </h3>
       <h3 class="font-accent mb-[60px] text-4xl tracking-wider">
         <AnimationTitle
           :titles="title2"
-          :wrapper-class-name="`${className}-wrapper-2`"
+          :wrapper-class-name="`${className}-wrapper`"
           :text-class-name="`${className}-2`"
         />
       </h3>
