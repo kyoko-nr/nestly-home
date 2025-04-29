@@ -42,7 +42,7 @@ const className = "js-callout-title";
         />
       </h3>
       <button
-        class="border-dark-gray/80 transition-bg-color hover:bg-dark-beige/50 border bg-white/60 px-[48px] py-[16px] backdrop-blur-xs duration-300 ease-in-out"
+        class="border-dark-gray/80 transition-bg-color hover:bg-dark-beige/50 cursor-pointer border bg-white/60 px-[48px] py-[16px] backdrop-blur-xs duration-300 ease-in-out"
       >
         <span class="text-xl tracking-wider">Get Started</span>
       </button>

@@ -1,10 +1,19 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { navItems } from "./navItems";
+import { lenis } from "../../../lenis/setup";
 
 const isOpen = ref(false);
 
-const onClick = () => {
+const onClickButton = () => {
+  if (isOpen.value) {
+    onClose();
+  } else {
+    onOpen();
+  }
+};
+
+const onToggle = () => {
   const body = document.querySelector("body");
   const main = document.querySelector("main");
   if (body && main) {
@@ -13,6 +22,22 @@ const onClick = () => {
   }
   isOpen.value = !isOpen.value;
 };
+
+const onOpen = () => {
+  onToggle();
+  lenis.stop();
+};
+
+const onClose = () => {
+  onToggle();
+  lenis.start();
+};
+
+const onClickLink = (e: Event, anchor: string) => {
+  e.preventDefault();
+  onClose();
+  lenis.scrollTo(anchor);
+};
 </script>
 
 <template>
@@ -20,7 +45,7 @@ const onClick = () => {
     <button
       class="custom-hamburger relative z-6 block cursor-pointer p-[20px]"
       :class="{ 'is-open': isOpen }"
-      @click="onClick"
+      @click="onClickButton"
     >
       <span class="custom-hamburger-line"></span>
       <span class="custom-hamburger-line"></span>
@@ -29,7 +54,7 @@ const onClick = () => {
     <Transition>
       <div
         v-if="isOpen"
-        class="bg-beige/90 absolute top-0 left-0 z-5 flex h-screen w-full items-center justify-center"
+        class="bg-beige absolute top-0 left-0 z-5 flex h-screen w-full items-center justify-center"
       >
         <ul class="w-full">
           <li
@@ -39,6 +64,7 @@ const onClick = () => {
             <a
               :href="item.href"
               class="custom-link relative flex h-full items-center px-[60px] py-[18px] leading-normal"
+              @click="(e: Event) => onClickLink(e, item.href)"
               ><span
                 class="custom-link-text relative pl-[40px] text-xl tracking-wider"
                 >{{ item.label }}</span
