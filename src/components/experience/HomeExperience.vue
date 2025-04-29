@@ -33,7 +33,7 @@ const texts = [
     </div>
     <div class="relative">
       <div
-        class="absolute top-1/2 w-[80%] -translate-y-[calc(100%-10px)] max-md:top-0 max-md:left-0 max-md:w-[48%] max-md:-translate-y-[10%]"
+        class="absolute top-1/2 w-[80%] -translate-y-[calc(100%-10px)] max-md:top-0 max-md:left-0 max-md:w-[55%] max-md:translate-y-0"
       >
         <AnimationImage
           :src="Home01"
@@ -42,7 +42,7 @@ const texts = [
         />
       </div>
       <div
-        class="absolute top-1/2 right-0 w-[80%] -translate-y-[10px] max-md:top-0 max-md:right-0 max-md:w-[48%] max-md:translate-y-[10%]"
+        class="absolute top-1/2 right-0 w-[80%] -translate-y-[10px] max-md:top-[unset] max-md:right-0 max-md:bottom-0 max-md:w-[55%] max-md:translate-y-0"
       >
         <AnimationImage
           :src="Home02"

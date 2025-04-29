@@ -38,7 +38,6 @@ onMounted(() => {
     class="border-dark-gray bg-beige/50 fixed top-0 z-1 flex h-[64px] w-full items-center border-b px-[40px] opacity-0 backdrop-blur-sm max-md:justify-between"
   >
     <a
-      href="#"
       class="flex h-full items-center gap-2"
       @click="onClick"
     >
