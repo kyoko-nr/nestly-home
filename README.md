@@ -1,5 +1,39 @@
-# Vue 3 + TypeScript + Vite
+# NESTLY Home — Smart Home Landing Page
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A modern and minimal smart home landing page built with [Vue 3](https://vuejs.org/), [Vite](https://vitejs.dev/), and [GSAP](https://greensock.com/gsap/).
+Designed to deliver a calm, futuristic experience with smooth animations and responsive layout.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+This project was built as part of my personal portfolio.
+
+![Nestly Screenshot](./docs//nestly_thum.jpg)
+
+## 🔗 Demo
+
+https://nestly-home.vercel.app/
+
+## 🚀 Features
+
+- 🌗 Full-screen hero section with smooth opening animation
+- 🎯 Scroll-triggered animations using GSAP + ScrollTrigger
+- 📱 Responsive layout
+- 💡 Seamless timeline interactions that feel natural to use
+- ⚡️ Fast performance via Vite
+- 🎨 Tailwind CSS for utility-first styling
+
+## 🛠 Tech Stack
+
+- Vue 3 + Vite
+- Tailwind CSS
+- GSAP / ScrollTrigger
+- Heroicons
+- Unsplash (images)
+- Lenis (smooth scrolling)
+
+## 📦 Getting Started
+
+```bash
+git clone https://github.com/yourname/nestly.git
+cd nestly
+npm install
+npm run dev
+```
