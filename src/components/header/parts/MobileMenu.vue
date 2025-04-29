@@ -9,7 +9,7 @@ const onClick = () => {
   const main = document.querySelector("main");
   if (body && main) {
     body.classList.toggle("no-scroll");
-    main.inert = true;
+    main.inert = !main.inert;
   }
   isOpen.value = !isOpen.value;
 };
@@ -77,9 +77,9 @@ const onClick = () => {
   background: var(--color-dark-gray);
   left: 50%;
   transition:
-    opacity 0.3s ease-in-out,
-    rotate 0.3s ease-in-out,
-    translate 0.3s ease-in-out;
+    opacity 0.4s var(--ease-in-out-expo),
+    rotate 0.4s var(--ease-in-out-expo),
+    translate 0.4s var(--ease-in-out-expo);
 
   &:nth-child(1) {
     top: 50%;
@@ -104,7 +104,7 @@ const onClick = () => {
   }
 }
 .custom-link-text {
-  transition: translate 0.2s ease-in-out;
+  transition: translate 0.5s var(--ease-out-expo);
   &::before {
     content: "";
     position: absolute;
