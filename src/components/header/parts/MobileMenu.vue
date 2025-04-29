@@ -5,6 +5,12 @@ import { navItems } from "./navItems";
 const isOpen = ref(false);
 
 const onClick = () => {
+  const body = document.querySelector("body");
+  const main = document.querySelector("main");
+  if (body && main) {
+    body.classList.toggle("no-scroll");
+    main.inert = true;
+  }
   isOpen.value = !isOpen.value;
 };
 </script>
