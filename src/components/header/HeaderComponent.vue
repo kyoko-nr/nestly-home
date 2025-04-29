@@ -2,14 +2,8 @@
 import imageIcon from "@/assets/images/icon_nestly.svg";
 import { onMounted, useTemplateRef } from "vue";
 import gsap from "gsap";
-
-const navItems = [
-  { label: "Vision", href: "#vision" },
-  { label: "Features", href: "#features" },
-  { label: "Experience", href: "#experience" },
-  { label: "FAQs", href: "#faqs" },
-  { label: "Get Started", href: "#get-started" },
-];
+import DesktopMenu from "./parts/DesktopMenu.vue";
+import MobileMenu from "./parts/MobileMenu.vue";
 
 const header = useTemplateRef("header");
 
@@ -35,7 +29,7 @@ onMounted(() => {
 <template>
   <header
     ref="header"
-    class="border-dark-gray bg-beige/50 fixed top-0 z-1 flex h-[64px] w-full items-center border-b px-[40px] opacity-0 backdrop-blur-sm"
+    class="border-dark-gray bg-beige/50 fixed top-0 z-1 flex h-[64px] w-full items-center border-b px-[40px] opacity-0 backdrop-blur-sm max-md:justify-between"
   >
     <a
       href="#"
@@ -50,23 +44,11 @@ onMounted(() => {
         NESTLY Home
       </h2>
     </a>
-    <div class="flex h-full flex-1 justify-end gap-8">
-      <ul class="flex items-center">
-        <li
-          v-for="item in navItems"
-          :key="item.href"
-          class="h-full"
-        >
-          <a
-            :href="item.href"
-            class="custom-link flex h-full items-center px-[8px] leading-normal"
-            ><span
-              class="custom-text b relative px-[8px] py-[2px] text-base tracking-wider"
-              >{{ item.label }}</span
-            ></a
-          >
-        </li>
-      </ul>
+    <div class="flex h-full flex-1 justify-end gap-8 max-md:hidden">
+      <DesktopMenu />
+    </div>
+    <div class="hidden max-md:block">
+      <MobileMenu />
     </div>
   </header>
 </template>
